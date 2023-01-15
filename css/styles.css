@@ -998,7 +998,7 @@ button {
 	}
 
 	.hero {
-		background-image: linear-gradient(to right, #2e2f42b3, #2e2f42b3), url(../images/mobile-bg.jpeg);
+		background-image: linear-gradient(to right, #2e2f42b3, #2e2f42b3), url(../images/mobile-bg.jpg);
 	}
 
 	.icon-hero {
@@ -1051,7 +1051,7 @@ button {
 	(min-resolution: 192dpi),
 	(min-resolution: 2dppx) {
 	.hero {
-		background-image: linear-gradient(to right, #2e2f42b3, #2e2f42b3), url(../images/mobile-bg@2.jpeg);
+		background-image: linear-gradient(to right, #2e2f42b3, #2e2f42b3), url(../images/mobile-bg@2.jpg);
 	}
 }
 
@@ -1149,7 +1149,7 @@ button {
 	}
 
 	.hero {
-		background-image: linear-gradient(to right, #2e2f42b3, #2e2f42b3), url(../images/hero-bg.jpeg);
+		background-image: linear-gradient(to right, #2e2f42b3, #2e2f42b3), url(../images/hero-bg.jpg);
 	}
 
 	/* Features */
@@ -1270,7 +1270,7 @@ button {
 	(min-resolution: 192dpi),
 	(min-resolution: 2dppx) {
 	.hero {
-		background-image: linear-gradient(to right, #2e2f42b3, #2e2f42b3), url(../images/hero-bg@2.jpeg);
+		background-image: linear-gradient(to right, #2e2f42b3, #2e2f42b3), url(../images/hero-bg@2.jpg);
 	}
 }
 
@@ -1466,6 +1466,6 @@ button {
 	(min-resolution: 192dpi),
 	(min-resolution: 2dppx) {
 	.hero {
-		background-image: linear-gradient(to right, #2e2f42b3, #2e2f42b3), url(../images/desctop-hero-imj@2.jpeg);
+		background-image: linear-gradient(to right, #2e2f42b3, #2e2f42b3), url(../images/desctop-hero-imj@2.jpg);
 	}
 }
