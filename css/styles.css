@@ -117,7 +117,7 @@ h3 {
 }
 
 .hero-title {
-	max-width: 319px;
+	max-width: 320px;
 	color: var(--primary-white-color);
 	font-weight: 700;
 	font-size: 36px;
@@ -999,6 +999,8 @@ button {
 	.hero {
 		background-image: linear-gradient(to right, #2e2f42b3, #2e2f42b3), url(../images/mobile-bg.jpg);
 	}
+
+	
 
 	.icon-hero {
 		display: none;
