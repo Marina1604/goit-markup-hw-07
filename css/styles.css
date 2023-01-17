@@ -492,7 +492,9 @@ h3 {
 	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
 	border-radius: 4px;
 	padding: 24px;
-	overflow: auto;
+	height: 579px; 
+	max-height: 90vh; 
+	overflow-y: scroll;
 }
 
 /* кнопка закриття */
@@ -869,15 +871,16 @@ button {
 		position: fixed;
 		top: 0;
 		left: 0;
-		width: 100%;
-		height: 100%;
-		z-index: 1000;
+		width: 100vw;
+		height: 100vh;
+		z-index: 999;
 		opacity: 0;
 		background-color: #ffffff;
 		visibility: hidden;
 		pointer-events: none;
 		overflow: auto;
 	}
+
 	.close-button {
 		position: absolute;
 		right: 40px;
@@ -902,21 +905,25 @@ button {
 	}
 
 	.mobile-modal-container {
-		position: relative;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		/* position: relative; */
 		/* width: 100%; */
 		max-width: 428px;
-		max-height: 796px;
-		margin-right: auto;
-		margin-left: auto;
+		/* max-height: 796px; */
+		/* margin-right: auto;
+		margin-left: auto; */
 		padding-left: 40px;
 		padding-right: 40px;
 		padding-top: 40px;
 		padding-bottom: 40px;
+		
 	}
 
-	.mobile-modal-list {
+	/* .mobile-modal-list {
 		margin-top: 40px;
-	}
+	} */
 
 	.mobile-modal-list-line {
 		font-style: normal;
@@ -928,9 +935,9 @@ button {
 		text-transform: capitalize;
 	}
 
-	.mobile-modal-list-line:not(:last-child) {
+	/* .mobile-modal-list-line:not(:last-child) {
 		margin-bottom: 40px;
-	}
+	} */
 
 	/* .mobile-modal-list-line {
 		margin-top: 40px;
@@ -945,9 +952,21 @@ button {
 		color: var(--accent-color);
 	}
 
-	.list-mod {
-		margin-bottom: 284px;
+	.mobile-contact {
+		margin-top: auto;
 	}
+
+	.modal-navigation {
+		display: block;
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+
+	.list-mod {
+		display: flex;
+		flex-direction: column;
+	}
+
 	.list-mod > li:last-child {
 		color: #404bbf;
 	}
@@ -956,8 +975,15 @@ button {
 		color: #4d5ae5;
 	}
 
-	.link-contacts li + li {
+	/* .link-contacts li + li {
 		margin-top: 40px;
+	} */
+
+	.link-contacts {
+		display: flex;
+		flex-direction: column;
+		row-gap: 40px;
+		margin-bottom: 28px;
 	}
 
 	.contact-hover:hover,
@@ -987,9 +1013,9 @@ button {
 		/* margin-right: 20px; */
 	}
 
-	.mobile-modal-list .mobile-l {
+	/* .mobile-modal-list .mobile-l {
 		margin-bottom: 48px;
-	}
+	} */
 
 	.is-open {
 		opacity: 1;
@@ -1078,16 +1104,15 @@ button {
 }
 
 @media screen and (max-width: 479px) {
-	
 	.contact-mobile {
 		font-weight: 500;
 		font-size: 20px;
 		line-height: 1.2;
 	}
 
-.list-mod {
-	margin-bottom: 40px;
-}
+	.mobile-contact {
+		margin-top: auto;
+	}
 
 	.modal {
 		width: 100%;
@@ -1104,11 +1129,7 @@ button {
 	.footer-input {
 		width: 260px;
 	}
-	
 }
-
-
-
 
 @media screen and (max-width: 479px) and (min-device-pixel-ratio: 2),
 	(min-resolution: 192dpi),
