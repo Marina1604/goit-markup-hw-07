@@ -879,6 +879,9 @@ button {
 		visibility: hidden;
 		pointer-events: none;
 		overflow: auto;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
 	}
 
 	.close-button {
